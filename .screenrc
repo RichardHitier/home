@@ -1,0 +1,5 @@
+# balancer a urlview gniark gniark gniark
+bind ^B eval "hardcopy_append off" "hardcopy -h $HOME/.screen-urlview" "screen urlview $HOME/.screen-urlview"
+screen 1
+screen 2
+screen 3

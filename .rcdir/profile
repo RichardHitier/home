@@ -1,0 +1,37 @@
+alias apt-get='echo "use aptitude instead"'
+alias findname='find ./ -name'
+alias ls='ls --color=auto -p'
+alias x='startx 2>/dev/null &'
+#alias vim='vim -c """normal "'""""'
+
+alias qsdf='xmodmap ~/config/myDvorak.xmod;xrdb ~/.Xresources'
+alias qsdfg='sudo loadkeys ~/config/mydvorak-console'
+
+PATH=~/bin:$PATH
+PATH=$PATH:/usr/local/Acrobat7.0/bin/
+PATH=$HOME/building/firefox/:$PATH
+export PATH
+
+export LESSOPEN="/usr/bin/lessfile %s";
+export LESSCLOSE="/usr/bin/lessfile %s %s";
+
+#export DISPLAY="aspera:0"
+
+#export LC_ALL="fr_FR"
+#export LANG="fr_FR"
+
+export CVSROOT=/var/lib/cvs
+#export CVSROOT=/var/lib/cvs_pub
+
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/pgi/
+
+
+export PERL5LIB=./
+#export PAGER=most 
+alias m='mutt'
+alias t='tunnels'
+alias kt='killall ssh; tunnels'
+alias sp="ssh -p 2422 hitier@localhost"
+alias fet="sudo /etc/init.d/fetchmail restart; sudo tail -f /var/log/mail.log"
+alias sc="ssh r31538.ovh.net"

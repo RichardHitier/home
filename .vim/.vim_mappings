@@ -1,0 +1,29 @@
+" vim: ft=vim
+" --------------------
+"imap <F11> <nop>
+set pastetoggle=<F9>
+map <F12> :!./%
+set timeoutlen=150
+
+
+imap AG !a
+imap AC >a
+imap EG !e
+imap EA 'e
+imap EC >e
+imap ET :e
+imap IT :i
+imap IC >i
+imap OT :o
+imap OC >o
+imap UG !u
+imap UC >u
+imap UT :u
+imap CC ,c
+
+" completion
+"inoremap <C-Space> <C-X><C-O>
+"imap <C-Space> <C-X><C-O>
+
+
+

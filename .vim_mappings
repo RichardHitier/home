@@ -1,0 +1,23 @@
+" vim: ft=vim
+" --------------------
+"imap <F11> <nop>
+set pastetoggle=<F11>
+map <F12> :!./%
+
+
+imap AG !a
+imap AC >a
+imap EG !e
+imap EA 'e
+imap EC >e
+imap ET :e
+imap IT :i
+imap IC >i
+imap OT :o
+imap OC >o
+imap UG !u
+imap UC >u
+imap UT :u
+imap CC ,c
+imap DG '0
+imap CP Co

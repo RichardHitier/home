@@ -1,0 +1,72 @@
+LOGFILE=.procmail.log
+MAILDIR=$HOME/Mail
+
+####################
+# SPAMASSASSIN STUFF
+####################
+
+:0fw: spamassassin.lock
+* < 256000
+| spamassassin
+
+:0:
+# ^X-Spam-Level: \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+* ^X-Spam-Level: \*\*\*\*\*\*\*
+certain-spam
+
+:0:
+* ^X-Spam-Status: Yes
+probably-spam
+
+
+# suppresses same messages based on MSG-ID
+:0 Wh: msgid.lock
+| formail -D 5000  msgid.cache
+
+
+# My Rules
+#
+
+:0 H:
+* From.*toulibre.org
+toulibre
+
+:0 H:
+* From:.*anne.hitier@wanadoo.fr
+famille
+
+:0 H:
+* To:.*grisbi-user
+grisbi
+
+:0 H:
+* To:.*adella-ca@googlegroups.com
+adella-ca
+
+:0 H:
+* To:.*adella-users@googlegroups.com
+adella
+
+:0 H:
+* To:.*tous@cesr.fr
+/dev/null
+
+:0 H:
+* To:.*compil
+compil
+
+:0 H:
+* To:.*hitier@cesr.fr
+cesr
+
+:0 H:
+* Received:.*pollux.cesr.fr
+cesr
+
+:0 H:
+* From:.*schwalen
+perso
+
+:0 H:
+* To: user-french@listes.grisbi.org
+grisbi

@@ -1,0 +1,32 @@
+
+BOX rhi
+
+author "Richard Hitier <richard.hitier@co-libri.org>"
+revision "0.1"
+revdate "mardi 19 janvier 2010, 14:52:46 (UTC+0100)"
+created "mardi 19 janvier 2010, 14:52:46 (UTC+0100)"
+
+sample
+    +-------------+
+    |             |
+    |             |
+    +-------------+
+ends
+
+shapes {
+    nw ("+") n ("-") ne ("+")
+     w ("|")          e ("|")
+    sw ("+") s ("-") se ("+")
+}
+
+delim ?"
+replace "\*/" with "*\/"               # quote closing comment tags
+reverse "\*\\/" to "*/"
+
+padding {
+    horiz 1             # alternatives: all, vert, lef, rig, bottom, top
+}                       # can be combined, e.g. all 3 top 1
+
+elastic (n,e,s,w)
+
+END rhi

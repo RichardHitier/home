@@ -1,0 +1,43 @@
+#following lines override any previous
+folder-hook . my_hdr     From: Richard Hitier <richard.hitier@co-libri.org>
+folder-hook . my_hdr     Reply-To: richard hitier <richard.hitier@co-libri.org>
+folder-hook . set signature="~/.signatures/.signature"
+folder-hook . set record=^
+
+folder-hook perso|famille my_hdr     From: Le Chapapouëto <richard.hitier@co-libri.org>
+folder-hook perso|famille my_hdr     Reply-To: Le Chapapouëto <richard.hitier@co-libri.org>
+folder-hook perso|famille set signature="~/.signatures/perso"
+
+folder-hook cesr set signature="~/.signatures/cesr"
+folder-hook compil set signature="~/.signatures/compil"
+
+folder-hook glenans|toulibre my_hdr     From: richard Hitier <groz@free.fr>
+folder-hook glenans|toulibre my_hdr     Reply-To: richard Hitier <groz@free.fr>
+folder-hook glenans set signature="~/.signatures/glenans"
+folder-hook toulibre set signature="~/.signatures/toulibre"
+
+folder-hook cops my_hdr     From: richard <groz@free.fr>
+folder-hook cops my_hdr     Reply-To: richard <groz@free.fr>
+folder-hook cops set signature="~/.signatures/cops"
+
+folder-hook grisbi|CULTE|groz|fluxbox|debian-user my_hdr     From: richard <groz@free.fr>
+folder-hook grisbi|CULTE|groz|fluxbox|debian-user my_hdr     Reply-To: richard <groz@free.fr>
+folder-hook grisbi|CULTE|groz|fluxbox|debian-user set signature="~/.signatures/groz"
+
+folder-hook zood|adella|skolelinux  my_hdr     From: Richard Hitier <zood@adella.org>
+folder-hook zood|adella|skolelinux unmy_hdr     reply-to
+folder-hook zood|adella|skolelinux set signature="~/.signatures/zood"
+#folder-hook zood|adella*|skolelinux set signature="/home/hitier/bin/zood_sig.sh|"
+
+folder-hook adella-ca my_hdr    From: Richard Hitier <groz@free.fr>
+folder-hook adella-ca unmy_hdr  reply-to
+folder-hook adella-ca set       signature="~/.signatures/zood"
+
+folder-hook cdmi set signature="~/.signatures/perl"
+#folder-hook job set signature=~/.signatures/job
+
+folder-hook co-libri my_hdr     From: Richard Hitier <richard.hitier@co-libri.org>
+folder-hook co-libri my_hdr     Reply-To: Richard Hitier <richard.hitier@co-libri.org>
+folder-hook co-libri set signature="~/.signatures/co-libri"
+
+# vim: ft=muttrc

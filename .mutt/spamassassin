@@ -1,0 +1,11 @@
+# Add this to your ~/.muttrc to integrate spamassassin and mutt
+# spamassassin report and classify as spam
+macro index S "|/usr/bin/spamassassin -r"
+# spamassassin classify as ham
+macro index H "|/usr/bin/sa-learn --ham  --no-rebuild --single"
+# spamassassin classify as spam
+macro index X "|/usr/bin/sa-learn --spam  --no-sync --single  d q$"
+# rebuild the spamassassin bayes filter db
+#macro index R "|/usr/bin/sa-learn --rebuild"
+
+# vim: ft=muttrc

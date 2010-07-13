@@ -1,0 +1,240 @@
+#############
+# ~/.muttrc
+#############
+# mon ti fichier de config a moi que je construis patiemment 
+# au fur et a mesure.
+
+#############
+#############
+### DETAILS GENE 
+### MOUVEMENTS AUTO
+### PLEIN ECRAN
+### BROWSER
+### INDEX DES MESSAGES 
+### EDITION DE MESSAGE
+### COMPOSITION AUTO
+### REPONSES
+### PAGER
+### LES COULEURS
+### BINDINGS
+### HOOKING !!!
+### CONFIG AUX
+#############
+#############
+
+### DETAILS GENE 
+# utf8 hack
+charset-hook   ^us-ascii$  cp1252
+charset-hook   ^iso-8859-1$$  cp1252
+charset-hook   ^ISO-8859-1$$  cp1252
+#unset          strict_mime
+set            assumed_charset="cp1252"
+set            config_charset=utf-8
+
+ set folder=~/Mail					# rep' des mbox?	
+#set spoolfile=~/Mail/mbox			# rep' sur lequel on ouvre mutt
+ set alias_file=~/.mutt/aliases
+#set quote_regexp="^([ \t]*[\|>])+"	# indicateur de texte cite
+ set signature						# lit ~/.signature
+ mailboxes `echo $HOME/Mail/*`		# verif toutes les mbox 
+ set quit=ask-yes					# vraiment quitter?
+#set charset=iso-8859-1
+#set charset=latin-1
+#set charset="us-ascii:iso-8859-1:utf-8"
+ set charset="utf-8"
+
+ 
+ # lun jun 28 15:43:43 EDT 2004: mutt 1.5....
+ alternates 'groz@free.fr|adella@adella.org|zood@adella.org|richard.hitier@cesr.fr|richard.hitier@co-libri.org'
+#set alternates='groz@free.fr|adella@adella.org|zood@adella.org'
+ set nobeep                         # quelle horreur !!!!
+ set nobeep_new                     # celui des nouveaux messages
+ set simple_search='~B'             # prefix des motifs de recherche 
+                                    # (search, limit)
+ set wait_key=no                    # retour immédiat après un pipe
+
+#set display_filter=~/bin/mail-to-filter
+
+### MOUVEMENTS AUTO
+ set record=+outbox					# sauvegarde courrier sortant
+ set postponed=+postponed			# sauvegarde courrier en attente 
+ set mbox=+mbox						# je ne m'explique pas ca bien
+ 									# mais c'est necessaire.
+ set noconfirmappend				# Deplacer sans confimation!
+ set delete=yes						# Ah ouais, effacer sans scrupules!
+ set save_empty=no                  # effacer toute boite vide
+
+### PLEIN ECRAN
+ set nohelp							# affiche la ligne d'aide
+#set status_on_top	 				# Barre d'etat en haut. 
+ set status_format="  %v: %f (%s) [%M/%m] [N=%n,*=%t,post=%p,new=%b]"
+
+### BROWSER
+ set folder_format="%-20N %f %>  %d"
+ set sort_browser=reverse-date		# méthode de tri des fichiers 
+
+
+### INDEX DES MESSAGES 
+ unset mark_old						# messages toujours neufs
+#set sort=threads
+ set sort=date
+ set to_chars=" +TCF"            	# repere destinataire: 
+ 						            # |pas_moi|moi_seul|moi_aussi|Cc|Exp=moi|
+ set noarrow_cursor					# Utilise -> pour select liste 
+
+# le format de Vincent Lefevre, qui affiche nb mess en subthread:
+#set date_format='%a %j/%U %H:%M'   # with num week
+#set date_format='%a %d/%m/%g %H:%M'   
+ set date_format='%d/%b %H:%M'   
+#set hdr_format='%4C %Z %d %-17.17F %?M?->%3M&(%3l)? %s'
+#set index_format='%4C %Z %{%b %d} %-17.17F %?M?->%3M&(%3l)? %s'
+ set index_format='%4C %Z %d %-17.17F %?M?->%3M&(%X Attach)? %s'
+
+### EDITION DE MESSAGE
+ set edit_headers					# Edition des entetes
+ set editor="vim '+/^$'"			# Commencer a la premiere ligne vide
+ set abort_nosubject=ask-no			# Annuler si sujet vide?
+ set postpone=ask-no			    # ne pas ajourner ?
+ set recall=no	   				    # Rappeler mess ajournés avant edition ?
+ 
+
+### COMPOSITION AUTO
+ unmy_hdr	*
+ my_hdr     From: Richard Hitier <richard.hitier@co-libri.org>
+ my_hdr     Reply-To: Richard Hitier <richard.hitier@co-libri.org>
+ my_hdr     X-Loop: joshua
+#my_hdr     X-Editor: Vim, http://www.vim.org/
+#my_hdr     X-Mailer: Mutt,	http://www.mutt.org/
+#set realname=couicoui
+set use_from
+#unset use_from
+#set hostname=nowherecity
+#set hidden_host
+
+### REPONSES
+ set nomove					# do not move read mails from mailbox to $mbox 
+ set include				# inclus le message d'origine
+ set indent_string="> "		# quoting original message
+ set fast_reply				# pas de prompt sur une reponse
+ set abort_unmodified=ask-no	# envoyer même si pas modif ? 
+ set attribution="* Le %{ %d %b} >%n< a écrit:"
+ set forward_quote         # quoter le mess forwardé ac 'indent-string' 
+ set forward_format="%s"    # le format du sujet en forwarding
+ set bounce_delivered=no    # a voir avec le bouncing
+
+### PAGER
+ set pager_stop				# next-undeleted when the end of the mail is shown
+ set pager_index_lines=5	# nombre de lignes de l'index visibles
+#set pager=less -aCMsei		# I recommend "less" as the external pager.
+ set pager_context=2		# number of lines that overlap on paging
+ set tilde					# Fin de fichier "a la" vi
+
+
+## Affichage des en-tetes de messages
+
+# ignore toutes les lignes d'entête 
+ ignore *                        
+
+# rajoute les suivantes:
+ unignore from to subject
+ unignore organization organisation
+ unignore user-agent: x-agent: x-mailer: x-newsreader: x-mailing-list:
+ unignore newsgroups: posted-to: x-also-posted-to:
+ unignore x-lotus
+ unignore x-resent
+ unignore x-webtv
+ unignore x-spam-status
+
+# Ordonner les en-tetes
+ unhdr_order *				# Effacer toutes les definitions anterieures
+ hdr_order From To: Subject: 
+
+### LES COULEURS
+
+#color normal		white	black	# couleurs par default
+ color markers		red		default	# indic' longue ligne pager
+ color indicator	red		default	# fleche de selection index
+ color tree			red		default	# fleches threads index
+ color error		red		default	# messages d'erreur
+ color message		yellow	default	# messages d'info
+ color attachment	green	default	# ..
+ color signature	brightblue		default	# pager body
+ color tilde		magenta	default	# pager body
+ 
+ color status  blue cyan            # la barre d'etat bien sur....
+
+# les en-tetes
+ color header		green	default		"^from*"
+ color header 		green	default		"^to: "
+ color header 		brightred	default	"^subject: "
+#color header		black	black	"^x-mailer: " 
+#color header default
+#color header default
+
+# le texte cite des reponses
+ color quoted      cyan   default	# pager body
+ color quoted1     red    default	# pager body
+ color quoted2     yellow   default	# pager body
+ color quoted3     brightyellow default	# pager body
+
+# les smileys:  :-)  ;-)  :-/  :-(
+ color body        brightyellow default   "[;:]-[)/(|]"
+ 
+# les url du net
+ color body cyan  default "(http|ftp|news|telnet|finger)://[^ ]*"
+# et les e-mail
+ color body magenta default   "[[:alnum:]][-+.#_[:alnum:]]*@[-+.[:alnum:]]*[[:alnum:]]"
+
+
+### BINDINGS
+
+#bind index		<esc>V	show-version	# V par defaut
+ bind index		v		collapse-thread	# <esc>v par defaut
+ bind index		V		collapse-all	# <esc>V par defaut
+
+### HOOKING
+
+#set save_name=no
+#set force_name=no
+#fcc-hook "~f adella" ="adella-testitou"
+#fcc-hook "~f adella" ="^"
+# set save_current=yes   #cf http://groz.free.fr/
+
+folder-hook . push V       #fermer les fils a l'arrivee dans une mailbox
+#folder-hook . push l~N   #filtrer seulement les nouveaux msgs
+
+
+### MACROS
+ macro index C  "c?\t"
+ macro index \Cb |urlview\n "Extract a URL, and queue for later download"
+ macro pager \Cb |urlview\n "Extract a URL, and queue for later download"
+#macro pager A |/home/lecteur/bin/mail2muttalias.py\n
+ macro pager A |'abook --add-email'\n
+ macro index A |'abook --add-email'\n
+
+### DIVERS
+ 
+ set alias_format="%9n %t %-10a %r"
+ set sort_alias=alias
+ set query_command="abook --mutt-query '%s'"
+ auto_view text/html
+#auto_view application/msword
+
+### CONFIG AUX
+ 
+source ~/.mutt/aliases
+source ~/.mutt/spamassassin
+source ~/.mutt/hooks
+#source ~/.mutt/mutt.color
+#source ~/.mutt/mutt.lists
+source ~/.mutt/gpg.rc
+#source ~/.mutt.aliases
+
+####GPG
+
+#set pgp_default_version=gpg
+#set pgp_sign_micalg=md5
+
+
+
+# vim:ts=4 

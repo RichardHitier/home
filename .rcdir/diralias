@@ -1,0 +1,3 @@
+CHANTIERS = ~/co-libri/chantiers/src
+CESRADS = ${CHANTIERS}/CesrAds
+CHEMCAM = ${CHANTIERS}/ChemCam

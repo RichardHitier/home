@@ -1,0 +1,36 @@
+! Set the font to a more readable 9x15
+!UXTerm*font: -misc-fixed-medium-r-normal-*-18-120-100-100-c-90-iso10646-1
+!UXterm*font: -misc-fixed-medium-r-normal-*-20-140-100-100-c-100-iso8859-1
+!UXterm*font: -*-dejavu sans-bold-r-*-*-*-*-*-*-*-*-*-*
+!XTerm*font: 9x15
+UXTerm*font: 10x20
+!UXTerm.VT100.FaceSize: Huge
+
+!xterm*VT100*font:  -efont-fixed-medium-r-*-*-16-*-*-*-*-*-iso10646-*
+!xterm*VT100*font:  -efont-fixed-medium-r-*-*-24-*-*-*-*-*-iso10646-*
+!xterm*VT100*font2: -efont-fixed-medium-r-*-*-10-*-*-*-*-*-iso10646-*
+!xterm*VT100*font3: -efont-fixed-medium-r-*-*-12-*-*-*-*-*-iso10646-*
+!xterm*VT100*font4: -efont-fixed-medium-r-*-*-14-*-*-*-*-*-iso10646-*
+!xterm*VT100*font5: -efont-fixed-medium-r-*-*-16-*-*-*-*-*-iso10646-*
+!xterm*VT100*font6: -efont-fixed-medium-r-*-*-24-*-*-*-*-*-iso10646-*
+
+
+! Display a scrollbar
+XTerm*scrollBar: false
+! XTerm*geometry: 103x47+65+0
+! rhi mercredi 26 juillet 2006, 14:23:39 (UTC+0200)
+! nvidia dualscreen
+! DFP-0 rightof CRT-0
+!XTerm*geometry: 111x49+1280+0
+XTerm*geometry: 154x67+0+0
+UXTerm*geometry: 156x54+0+0
+! DFP-0 leftof CRT-0
+! XTerm*geometry: 111x49+0+0
+
+! Set the size of the buffer to 1000 lines
+XTerm*saveLines: 1000
+XTerm*background: black
+XTerm*foreground: white
+
+Aterm*transparent: true
+

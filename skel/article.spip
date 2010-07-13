@@ -1,0 +1,36 @@
+un paragraphes.
+Pour créer des paragraphes, il suffit de laisser une ligne vide, un peu comment
+on sépare les paragraphes dans un email (on « saute » une ligne).
+
+un autre paragraphes.
+Pour créer des paragraphes, ... etc
+
+
+
+
+ une liste
+
+- Notez
+- :
+- ici
+- un
+- simple
+
+   1. premier 2. deuxième 3. troisième
+
+{{{Un titre }}}
+
+ {{Gras}} et {italique}
+
+-----
+
+[minirézo->http://www.minirezo.net/]
+
+(« [->minirezo@rezo.net] »)...
+
+
+
+| {{Nom}} | {{Prénom}} | {{Age}} | | Marso | Ben | 23 ans | | Capitaine | | non
+connu | | Philant | Philippe | 46 ans | | Cadoc | Bébé | 4 mois |
+
+<code>...</code> 
