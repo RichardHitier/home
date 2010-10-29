@@ -1,6 +1,6 @@
 # read for login
-eval `ssh-agent`
-ssh-add
+#eval `ssh-agent`
+#ssh-add
 
 # tunnels
 
@@ -8,4 +8,5 @@ ssh-add
 #alias tunnels='ssh -N -f hitier@fw-in.cesr.fr -L2422:iapetus.cesr.fr:22 -L2410:mailhost.cesr.fr:110 '
 #alias tunnels='ssh -N -f hitier@fw-in.cesr.fr -L2422:iapetus.cesr.fr:22'
 #alias tunnels='ssh -N -f hitier@fw-in.cesr.fr -L2422:eros.cesr.fr:22'
+alias tunnels='ssh -N -f richard@r31538.ovh.net -L2422:manunja.cesr.fr:22'
 
