@@ -1,22 +1,24 @@
+####Do some key re-mapping
 # c-t == F13 (== capslock)
+exec xmodmap -e 'remove lock = Caps_Lock'
+exec xmodmap -e 'keycode 66 = F13'
 escape F13
 definekey top F13 readkey root
 definekey root F13 link less
-
+#
 ###What programs do we run on startup?
-####Do some key re-mapping
-exec xmodmap -quiet ~/.xmodmaprc-ok
 
 #
 ## app bindings
 #
 bind o exec ooffice
 bind c exec uxterm
-bind d exec /home/richard/Desktop/firefox/firefox
+bind d exec /usr/bin/iceweasel
+#bind d exec /home/richard/building/firefox/firefox
 bind e exec import -border capture.png
-#bind H exec sudo /sbin/halt
-bind H exec sudo  /usr/sbin/s2disk
-bind h exec sudo  /usr/sbin/s2ram
-bind j exec /home/richard/bin/showStatus.sh
+bind H exec sudo /sbin/halt
+#bind H exec sudo  /usr/sbin/s2disk
+bind h exec sudo  /usr/sbin/hibernate-ram
+bind j exec /home/richard/bin/rpShowStatus.sh
 exec rpws init  3 -k
-exec xsetbg -border black -center images/bender1.jpg
+exec xsetbg -border black -center images/bender.jpg
