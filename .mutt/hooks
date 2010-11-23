@@ -1,7 +1,7 @@
 #following lines override any previous
 folder-hook . my_hdr     From: Richard Hitier <richard.hitier@co-libri.org>
 folder-hook . my_hdr     Reply-To: richard hitier <richard.hitier@co-libri.org>
-folder-hook . set signature="~/.signatures/.signature"
+folder-hook . set signature="~/.signature"
 folder-hook . set record=^
 
 folder-hook perso|famille my_hdr     From: Le Chapapouëto <richard.hitier@co-libri.org>
