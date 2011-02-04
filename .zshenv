@@ -8,8 +8,8 @@ export HISTFILE="$HOME/.zhistory"
 export SAVEHIST="5000" #taille du fichier
 export HISTSIZE="5000" #taille historique courant
 
-#export MAILPATH="/home/hitier/Mail?Msg dans \$_:/var/spool/mail/hitier?Mbox"
-export MAILPATH="/var/spool/mail/hitier?Un message dans ta Mbox"
+export MAILPATH="/home/richard/Mail/*?Msg dans $_:/var/spool/mail/richard?un message dans la Mbox"
+#export MAILPATH="/var/spool/mail/hitier?Un message dans ta Mbox"
 export MAILCHECK=60
 
 setopt HIST_IGNORE_ALL_DUPS 

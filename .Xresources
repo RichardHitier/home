@@ -3,7 +3,8 @@
 !UXterm*font: -misc-fixed-medium-r-normal-*-20-140-100-100-c-100-iso8859-1
 !UXterm*font: -*-dejavu sans-bold-r-*-*-*-*-*-*-*-*-*-*
 !XTerm*font: 9x15
-UXTerm*font: 10x20
+UXTerm*font: 9x15
+!UXTerm*font: 10x20
 !UXTerm.VT100.FaceSize: Huge
 
 !xterm*VT100*font:  -efont-fixed-medium-r-*-*-16-*-*-*-*-*-iso10646-*
@@ -31,6 +32,9 @@ UXTerm*geometry: 156x54+0+0
 XTerm*saveLines: 1000
 XTerm*background: black
 XTerm*foreground: white
+UXTerm*saveLines: 1000
+UXTerm*background: black
+UXTerm*foreground: white
 
 Aterm*transparent: true
 

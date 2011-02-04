@@ -217,7 +217,7 @@ folder-hook . push V       #fermer les fils a l'arrivee dans une mailbox
  set alias_format="%9n %t %-10a %r"
  set sort_alias=alias
  set query_command="abook --mutt-query '%s'"
-#auto_view text/html
+ auto_view text/html
 #auto_view application/msword
 
 ### CONFIG AUX

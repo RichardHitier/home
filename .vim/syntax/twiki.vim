@@ -57,7 +57,9 @@ endif
 
 syntax match twikiSeparator    "^---\+"
 syntax match twikiBulletedList "^\(   \|\t\)\+\*\ze "
-syntax match twikiOrderedList  "^\(   \|\t\)\+1\ze "
+"rhi mods
+syntax match twikiOrderedList  "^\(   \|\t\)\+\d\.\ze "
+syntax match twikiDefinitionItem  "^\(   \|\t\)\+\$ .\{-}:\ze "
 
 
 syntax match twikiSimpleVariable "\([^!]\|^\)\zs%\w\+%"
@@ -129,6 +131,9 @@ TwikiHiLink twikiBulletedList  Operator
 TwikiHiLink twikiOrderedList   Operator
 
 TwikiHiLink twikiDelimiter     Operator
+
+TwikiHiLink twikiDefinitionItem Operator
+"TwikiSynColor twikiDefinitionItem term=bold cterm=bold gui=bold
 
 " Links
 TwikiSynColor twikiLinkMarker term=bold cterm=bold gui=bold

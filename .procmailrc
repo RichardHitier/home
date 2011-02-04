@@ -5,9 +5,9 @@ MAILDIR=$HOME/Mail
 # SPAMASSASSIN STUFF
 ####################
 
-:0fw: spamassassin.lock
-* < 256000
-| spamassassin
+#:0fw: spamassassin.lock
+#* < 256000
+#| spamassassin
 
 :0:
 # ^X-Spam-Level: \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
@@ -18,14 +18,18 @@ certain-spam
 * ^X-Spam-Status: Yes
 probably-spam
 
-
-# suppresses same messages based on MSG-ID
+#
+## suppresses same messages based on MSG-ID
 :0 Wh: msgid.lock
 | formail -D 5000  msgid.cache
 
 
 # My Rules
 #
+
+:0 H:
+* To.*richard.hitier@orange.fr
+orange
 
 :0 H:
 * From.*toulibre.org

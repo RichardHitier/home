@@ -1,10 +1,13 @@
 ####Do some key re-mapping
 # c-t == F13 (== capslock)
-exec xmodmap -e 'remove lock = Caps_Lock'
-exec xmodmap -e 'keycode 66 = F13'
 escape F13
 definekey top F13 readkey root
 definekey root F13 link less
+#then remap
+#xmodmap -e 'remove lock = Caps_Lock'
+#xmodmap -e 'keycode 66 = F13'
+exec xmodmap .rat.xmod
+
 #
 ###What programs do we run on startup?
 

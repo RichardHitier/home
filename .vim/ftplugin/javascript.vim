@@ -14,3 +14,4 @@
 "
 "let b:undo_indent = "setl cin<"
 setl cin<
+se foldmethod=indent
