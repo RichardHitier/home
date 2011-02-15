@@ -16,8 +16,8 @@ exec xmodmap .rat.xmod
 #
 bind o exec ooffice
 bind c exec uxterm
-bind d exec /usr/bin/iceweasel
-#bind d exec /home/richard/building/firefox/firefox
+#bind d exec /usr/bin/iceweasel
+bind d exec /home/richard/building/firefox/firefox
 bind e exec import -border capture.png
 bind H exec sudo /sbin/halt
 #bind H exec sudo  /usr/sbin/s2disk
