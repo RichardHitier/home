@@ -78,7 +78,7 @@ syntax region twikiPre matchgroup=twikiTag contains=twikiVariable,twikiSimpleVar
     \ start="<pre>" end="</pre>"
 
 syntax region twikiHeading matchgroup=twikiHeadingMarker oneline
-    \ start="^---+\+" end="$"
+    \ start="^---[#|+]\+" end="$"
 
 "let s:wikiWord = '\(\w\+\.\)\?\u[a-z0-9]\+\(\u[a-z0-9]\+\)\+'
 let s:wikiWord = '\u\+[a-z0-9]\+\(\u\+[a-z0-9]\+\)\+'

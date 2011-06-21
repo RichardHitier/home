@@ -103,8 +103,8 @@ if exists("g:Twiki_FoldAtHeadings") &&
         let lineText  = getline(a:lineNumber)
         let foldValue = "="
 
-        if lineText =~ "^---+\\+"
-            let pluses    = matchstr(lineText, "+\\+", 3)
+        if lineText =~ "^---[#\|+]\\+"
+            let pluses    = matchstr(lineText, "[#\|+]\\+", 3)
             let foldLevel = strlen(pluses)
             let foldValue = ">".foldLevel
         endif
