@@ -22,13 +22,10 @@ alias t2t=txt2tags
 alias m='mutt'
 alias t='tunnels'
 alias if='sudo ifdown eth1; sudo ifup eth1=wdyna'
-alias kt='killall ssh; tunnels'
-alias sp="ssh -p 2422 hitier@localhost"
 #alias fet="sudo /etc/init.d/fetchmail restart; sudo tail -f /var/log/mail.log"
 alias fet=fetchmail
 alias rq='sudo runq'
 alias mq='sudo mailq'
-alias sc="ssh r31538.ovh.net"
 alias apt-get='echo "use aptitude instead"'
 alias findname='find ./ -name'
 alias ls='ls --color=auto -p'
