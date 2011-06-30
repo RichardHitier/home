@@ -19,7 +19,6 @@ export PERL5LIB=./
 #export PAGER=most 
 
 alias t2t=txt2tags
-alias m='mutt'
 alias t='tunnels'
 alias if='sudo ifdown eth1; sudo ifup eth1=wdyna'
 #alias fet="sudo /etc/init.d/fetchmail restart; sudo tail -f /var/log/mail.log"
@@ -31,7 +30,8 @@ alias findname='find ./ -name'
 alias ls='ls --color=auto -p'
 alias x='startx 2>/dev/null &'
 #alias vim='vim -c """normal "'""""'
+alias m='fet; rq; mq; mutt'
 
 alias qsdf='xmodmap ~/config/misc/myDvorak.xmod;xrdb ~/.Xresources'
 alias qsdfg='sudo loadkeys ~/config/misc/mydvorak-console'
-
+alias showip="sudo ifconfig eth0  | grep 'inet adr' | sed -e 's/^.*adr:\([^ ]*\).*$/\1/'"
