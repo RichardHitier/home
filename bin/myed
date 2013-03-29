@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# gnome-terminal -e vim  +"se ft=twiki" "$@"
+exec xterm -e vim  +"se ft=twiki" "$@"
+
+
+#${VISUAL='vim'}
+# 
+#exec gnome-terminal -e $VISUAL ${1+"$@"}
