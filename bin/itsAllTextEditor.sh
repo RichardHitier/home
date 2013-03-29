@@ -2,6 +2,6 @@
 # shell script to be called by It's All Text firefox plugin.
 # wrapper for the form text field editor 
 
-uxterm -e vim $@
+gnome-terminal -e vim $@
 
 

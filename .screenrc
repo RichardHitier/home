@@ -3,3 +3,5 @@ bind ^B eval "hardcopy_append off" "hardcopy -h $HOME/.screen-urlview" "screen u
 screen 1
 
 startup_message off
+
+defscrollback 10000

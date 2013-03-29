@@ -20,3 +20,6 @@ setopt SHARE_HISTORY
 setopt INTERACTIVE_COMMENTS
 #setopt MAIL_WARNING
 setopt nobeep
+#setopt cdablevars
+#setopt autocd
+export MyTifProj=/home/richard/git/egit/TiffScanner/src/

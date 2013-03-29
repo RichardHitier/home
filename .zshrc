@@ -18,8 +18,10 @@ bind 'H' run-help
 autoload -U colors
 colors
 
-user_color="yellow"
-host_color="green"
+#red green yellow blue magenta cyan white
+
+user_color="green"
+host_color="cyan"
 path_color="blue"
 
 myuser="%{$fg_bold[$user_color]%}%n"
