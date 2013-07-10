@@ -1,8 +1,6 @@
 "$Id: .vimrc,v 1.6 2004-11-30 11:03:00 hitier Exp $
 "pif
 
-let g:Twiki_FoldAtHeadings=1
-
 set hls
 
 filetype plugin on

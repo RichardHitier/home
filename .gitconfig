@@ -8,3 +8,5 @@
 	s = status -suno
 [branch "master"]
 	mergeoptions = --no-ff
+[core]
+	editor = vim
