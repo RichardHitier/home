@@ -1,3 +1,10 @@
 [user]
 	name = Richard Hitier
 	email = richard.hitier@co-libri.org
+[alias]
+	co = checkout
+	ci = commit
+	l = log --graph --pretty=\"format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset\"
+	s = status -suno
+[branch "master"]
+	mergeoptions = --no-ff
