@@ -34,6 +34,7 @@ alias m='fet; rq; mq; mutt'
 
 #alias qsdf='xmodmap ~/config/misc/myDvorak.xmod;xrdb ~/.Xresources'
 #alias qsdf='setxkbmap fr; xmodmap ~/config/misc/myDvorak.xmod'
+alias aoeui='setxkbmap fr'
 alias qsdf='/home/richard/bin/setMyDvorak.sh'
 alias aoeu=qsdf
 alias qsdfg='sudo loadkeys ~/config/misc/mydvorak-console'
