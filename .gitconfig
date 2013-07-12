@@ -6,7 +6,10 @@
 	ci = commit
 	l = log --graph --pretty=\"format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset\"
 	s = status -suno
+	br = branch
 [branch "master"]
 	mergeoptions = --no-ff
 [core]
 	editor = vim
+[diff]
+	tool = vimdiff
