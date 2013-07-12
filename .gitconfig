@@ -1,3 +1,7 @@
 [user]
 	name = Richard Hitier
 	email = richard.hitier@co-libri.org
+[core]
+	editor = vim
+[color]
+	ui = true
