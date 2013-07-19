@@ -4,7 +4,9 @@ autocmd BufEnter * lcd %:p:h
 
 " Skeletons
 autocmd BufNewFile  Makefile    0r ~/skel/Makefile
+autocmd BufNewFile  *.java      0r ~/skel/DataBean.java
 autocmd BufNewFile  *.html      0r ~/skel/page.html
+autocmd BufNewFile  *.xhtml      0r ~/skel/page.xhtml
 autocmd BufNewFile  *.xul       0r ~/skel/no-data.xul
 autocmd BufNewFile  *.xsl       0r ~/skel/feuille.xsl
 autocmd BufNewFile  *.pm        0r ~/skel/perl-pkg.pm
