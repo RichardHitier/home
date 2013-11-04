@@ -14,3 +14,5 @@
 	editor = vim
 [diff]
 	tool = vimdiff
+[credential]
+	helper = cache
