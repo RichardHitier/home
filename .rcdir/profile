@@ -12,7 +12,7 @@ export GREP_COLOR='1;32'
 
 export CVSROOT=/var/lib/cvs
 
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/pgi/
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/pgi/
 
 
 export PERL5LIB=./
