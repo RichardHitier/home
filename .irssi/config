@@ -260,7 +260,7 @@ settings = {
   core = {
     real_name = "richard hitier";
     user_name = "richard";
-    nick = "richard";
+    nick = "molokoi";
   };
   "fe-text" = { actlist_sort = "refnum"; };
 };
