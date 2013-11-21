@@ -8,8 +8,6 @@
 	s = status -suno
 	br = branch
 	pull = pull --ff
-[branch "master"]
-	mergeoptions = --no-ff
 [core]
 	editor = vim
 [diff]
