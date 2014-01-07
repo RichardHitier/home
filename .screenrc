@@ -1,7 +1,9 @@
 # balancer a urlview gniark gniark gniark
-bind ^B eval "hardcopy_append off" "hardcopy -h $HOME/.screen-urlview" "screen urlview $HOME/.screen-urlview"
-screen 1
+#bind ^B eval "hardcopy_append off" "hardcopy -h $HOME/.screen-urlview" "screen urlview $HOME/.screen-urlview"
+#screen 1
 
 startup_message off
-
+#
 defscrollback 10000
+
+term xterm-color
