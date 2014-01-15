@@ -10,6 +10,7 @@
 	pull = pull --ff
 [core]
 	editor = vim
+	pager = less -X
 [diff]
 	tool = vimdiff
 [credential]
