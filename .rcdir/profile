@@ -35,6 +35,7 @@ alias m='fet; rq; mq; mutt'
 #alias qsdf='xmodmap ~/config/misc/myDvorak.xmod;xrdb ~/.Xresources'
 #alias qsdf='setxkbmap fr; xmodmap ~/config/misc/myDvorak.xmod'
 alias qsdf=$HOME'/bin/setMyDvorak.sh'
+alias aoeui='setxkbmap fr'
 alias aoeu=qsdf
 alias qsdfg='sudo loadkeys ~/config/misc/mydvorak-console'
 alias showip="sudo ifconfig eth0  | grep 'inet adr' | sed -e 's/^.*adr:\([^ ]*\).*$/\1/'"
