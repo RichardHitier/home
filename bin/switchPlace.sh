@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# change exim conf depending on computer
+
 
 EXIMCONFFILE="/etc/exim4/update-exim4.conf.conf"
 RESOLVFILE="/etc/resolv.conf"

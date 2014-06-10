@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# editor wrapper to be used with "it's all text" firefox
+# plugin
+
 # gnome-terminal -e vim  +"se ft=twiki" "$@"
 exec xterm -e vim  +"se ft=twiki" "$@"
 

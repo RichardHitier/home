@@ -60,7 +60,6 @@ po::powerokwait:/etc/init.d/powerfail stop
 
 # mercredi 26 mars 2008, 15:03:38 (UTC+0100)
 # rhi: lauchnig my own X at boottime
-# doesnt work .. ???
 7:23:once:/bin/su - richard -c startx
 
 # Example how to put a getty on a serial line (for a terminal)
