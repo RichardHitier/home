@@ -1,5 +1,8 @@
 "$Id: .vimrc,v 1.6 2004-11-30 11:03:00 hitier Exp $
-"pif
+"
+
+execute pathogen#infect()
+
 
 set hls
 

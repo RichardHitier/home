@@ -3,22 +3,27 @@
 autocmd BufEnter * lcd %:p:h
 
 " Skeletons
-autocmd BufNewFile  Makefile    0r ~/skel/Makefile
-autocmd BufNewFile  *.java      0r ~/skel/DataBean.java
-autocmd BufNewFile  *.html      0r ~/skel/page.html5
-autocmd BufNewFile  *.xhtml      0r ~/skel/page.xhtml
-autocmd BufNewFile  *.xul       0r ~/skel/no-data.xul
-autocmd BufNewFile  *.xsl       0r ~/skel/feuille.xsl
-autocmd BufNewFile  *.pm        0r ~/skel/perl-pkg.pm
-autocmd BufNewFile  *.awk       0r ~/skel/script.awk
-autocmd BufNewFile  *.sh        0r ~/skel/script.sh
-autocmd BufNewFile  *.spip      0r ~/skel/article.spip
-autocmd BufNewFile  *.pl        0r ~/skel/script.pl
-autocmd BufNewFile  *.php        0r ~/skel/page.php
-autocmd BufNewFile  /etc/init.d/* 0r /etc/init.d/skeleton
+autocmd BufNewFile  Makefile       0r ~/skel/Makefile
+autocmd BufNewFile  *.java         0r ~/skel/DataBean.java
+autocmd BufNewFile  *.html         0r ~/skel/page.html5
+autocmd BufNewFile  *.xhtml        0r ~/skel/page.xhtml
+autocmd BufNewFile  *.xul          0r ~/skel/no-data.xul
+autocmd BufNewFile  *.xsl          0r ~/skel/feuille.xsl
+autocmd BufNewFile  *.pm           0r ~/skel/perl-pkg.pm
+autocmd BufNewFile  *.awk          0r ~/skel/script.awk
+autocmd BufNewFile  *.sh           0r ~/skel/script.sh
+autocmd BufNewFile  *.spip         0r ~/skel/article.spip
+autocmd BufNewFile  *.pl           0r ~/skel/script.pl
+autocmd BufNewFile  *.php          0r ~/skel/page.php
+autocmd BufNewFile  /etc/init.d/*  0r /etc/init.d/skeleton
 autocmd BufNewFile  *.\(cpp\|cc\)  0r ~/skel/source.cpp
 
 autocmd BufNewFile,BufRead *.pl setf perl6
+
+" jsBeautifier 
+autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
+autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
+autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
 
 " moved to ~/.vim/syntax/raw.vim
 "autocmd BufEnter *.raw set foldmethod=indent noexpandtab
