@@ -15,7 +15,5 @@
 	tool = vimdiff
 [credential]
 	helper = cache
-[push]
-	default = simple
 [color]
 	ui = true
