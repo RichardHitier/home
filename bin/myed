@@ -4,7 +4,8 @@
 # plugin
 
 # gnome-terminal -e vim  +"se ft=twiki" "$@"
-exec xterm -e vim  +"se ft=twiki" "$@"
+#exec xterm -e vim  +"se ft=twiki" "$@"
+exec gnome-terminal -e  'vim '"$@"
 
 
 #${VISUAL='vim'}
