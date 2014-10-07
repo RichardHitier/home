@@ -20,6 +20,8 @@ autocmd BufNewFile  *.\(cpp\|cc\)  0r ~/skel/source.cpp
 
 autocmd BufNewFile,BufRead *.pl setf perl6
 
+autocmd BufEnter tll.sapie.*.txt setf dokuwiki
+
 " jsBeautifier 
 autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
 autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
