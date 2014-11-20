@@ -1,6 +1,8 @@
 "$Id: .vimrc,v 1.6 2004-11-30 11:03:00 hitier Exp $
 "pif
 
+runtime ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
+
 set hls
 
 filetype plugin on
