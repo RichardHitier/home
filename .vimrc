@@ -1,7 +1,12 @@
 "$Id: .vimrc,v 1.6 2004-11-30 11:03:00 hitier Exp $
 "pif
 
-runtime ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
+" pathogen runtime manager
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+
+" js-beautifyer plugin
+map <c-j> :call JsBeautify()<cr>
 
 set hls
 
@@ -10,6 +15,7 @@ filetype indent on
 
 syntax on
 syntax enable
+
 set foldmethod=syntax
 set foldenable
 syn region foldBraces start=/{/ end=/}/ transparent fold
@@ -45,4 +51,3 @@ set encoding=utf8
 
 source ~/.vim/.vim_autocmd
 source ~/.vim/.vim_mappings
-"source /usr/share/vim/vim70/vimrc_example.vim
