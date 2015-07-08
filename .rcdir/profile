@@ -1,6 +1,10 @@
+GREP_COLORS='ms=01;32:mc=01;32:sl=:cx=:fn=06;32:ln=32:bn=32:se=36' 
+export GREP_COLORS
+
 PATH=~/bin:$PATH
 PATH=$PATH:/usr/local/Acrobat7.0/bin/
 PATH=$HOME/building/firefox/:$PATH
+PATH=$HOME/.local/bin:$PATH
 export PATH
 
 export LESSOPEN="/usr/bin/lessfile %s";
