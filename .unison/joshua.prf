@@ -5,7 +5,7 @@ root = /home/richard/00COMMON/
 #backupdir = /home/richard/unison.bak/
 #maxbackups = 5
 
-ignore=.git
+ignore = Name .git
 
 batch = true
 log=true
