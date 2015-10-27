@@ -2,6 +2,9 @@
 #bind ^B eval "hardcopy_append off" "hardcopy -h $HOME/.screen-urlview" "screen urlview $HOME/.screen-urlview"
 #screen 1
 
+bind ^x
+bind ^x stuff "screen -X chdir \$PWD;screen^M"
+
 startup_message off
 #
 defscrollback 10000
