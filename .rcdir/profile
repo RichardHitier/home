@@ -7,8 +7,9 @@ export LESSOPEN="/usr/bin/lessfile %s";
 export LESSCLOSE="/usr/bin/lessfile %s %s";
 
 
-export GREP_OPTIONS='--color=auto'
+#export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;32'
+unset GREP_OPTIONS
 
 export CVSROOT=/var/lib/cvs
 
