@@ -11,6 +11,7 @@
 [core]
 	editor = vim
 	pager = less -X
+	excludesfile = /home/richard/.gitignore
 [diff]
 	tool = vimdiff
 [credential]
