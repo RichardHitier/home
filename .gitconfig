@@ -8,6 +8,7 @@
 	s = status -suno
 	br = branch
 	pull = pull --ff
+	d = difftool
 [core]
 	editor = vim
 	pager = less -X
@@ -20,3 +21,5 @@
 	ui = true
 [push]
 	default = matching
+[difftool]
+	prompt = false
