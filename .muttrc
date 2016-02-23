@@ -76,7 +76,7 @@ set            config_charset=utf-8
 
 ### INDEX DES MESSAGES 
  unset mark_old						# messages toujours neufs
-#set sort=threads
+ set sort=threads
  set sort=date
  set to_chars=" +TCF"            	# repere destinataire: 
  						            # |pas_moi|moi_seul|moi_aussi|Cc|Exp=moi|
@@ -222,12 +222,13 @@ folder-hook . push V       #fermer les fils a l'arrivee dans une mailbox
 
 ### CONFIG AUX
  
-source ~/.mutt/aliases
-source ~/.mutt/spamassassin
-source ~/.mutt/hooks
+source ~/.mutt/imap.rc
+#source ~/.mutt/aliases
+#source ~/.mutt/spamassassin
+#source ~/.mutt/hooks
 #source ~/.mutt/mutt.color
 #source ~/.mutt/mutt.lists
-source ~/.mutt/gpg.rc
+#source ~/.mutt/gpg.rc
 #source ~/.mutt.aliases
 
 ####GPG
