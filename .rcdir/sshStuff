@@ -8,8 +8,9 @@
 #alias tunnels='ssh -N -f hitier@fw-in.cesr.fr -L2422:iapetus.cesr.fr:22 -L2410:mailhost.cesr.fr:110 '
 #alias tunnels='ssh -N -f hitier@fw-in.cesr.fr -L2422:iapetus.cesr.fr:22'
 #alias tunnels='ssh -N -f hitier@fw-in.cesr.fr -L2422:eros.cesr.fr:22'
-alias tunnels='ssh -N -f richard@r31538.ovh.net -L2422:manunja.cesr.fr:22'
-alias sp='ssh -p 2422 localhost' # manunja tunnel
-alias sg='ssh -p 2423 localhost' # goezogt tunnel, from goezogt$> ssh -f -N -R 2423:co-libri.dyndns.info:22 localhost
+#alias tunnels='ssh -N -f richard@r31538.ovh.net -L2422:manunja.cesr.fr:22'
+alias tunnel='ssh -N -f rhitier@194.199.146.31 -L2422:10.123.1.68:22'
+alias st=tunnel
+alias sp='ssh -p 2422 localhost' # calipso tunnel
 alias kt='killall ssh; tunnels'
 alias sc="ssh r31538.ovh.net"
