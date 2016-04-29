@@ -28,12 +28,12 @@ done
 #--------------------------------------------------------------------------------
 
 # what is this distro ?
-distro=$(grep '^ID=' /etc/os-release |sed -e 's/.*"\(.*\)"/\1/')
+distro=$(grep '^ID=' /etc/os-release |sed -e 's/^.*=\(.*\)/\1/')
 
 case "$distro" in
     centos|rhel|fedora)
         pm=yum;;
-    debian)
+    debian|ubuntu)
         pm=apt-get;;
     *)
         help "Unknown linux distribution $distro";;
@@ -45,7 +45,7 @@ echo $distro $pm
 sudo $pm -y install screen git vim zsh
 
 # change default shell
-chsh -s `chsh -l |grep zsh`
+chsh -s `which zsh`
 
 
 # vim tw=0
