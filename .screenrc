@@ -11,4 +11,4 @@ defscrollback 10000
 
 term xterm-color
 
-# shell "/bin/zsh"
+shell "/bin/zsh"
