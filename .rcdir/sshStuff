@@ -9,7 +9,7 @@
 #alias tunnels='ssh -N -f hitier@fw-in.cesr.fr -L2422:iapetus.cesr.fr:22'
 #alias tunnels='ssh -N -f hitier@fw-in.cesr.fr -L2422:eros.cesr.fr:22'
 #alias tunnels='ssh -N -f richard@r31538.ovh.net -L2422:manunja.cesr.fr:22'
-alias tunnel='ssh -N -f rhitier@194.199.146.31 -L2422:10.123.1.68:22'
+alias tunnel='ssh -N -f rhitier@gw.irap.omp.eu -L2422:10.123.1.68:22'
 alias st=tunnel
 alias sp='ssh -p 2422 localhost' # calipso tunnel
 alias kt='killall ssh; tunnels'
