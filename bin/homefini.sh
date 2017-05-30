@@ -28,7 +28,7 @@ done
 #--------------------------------------------------------------------------------
 
 # what is this distro ?
-distro=$(grep '^ID=' /etc/os-release |sed -e 's/^.*=\(.*\)/\1/')
+distro=$(grep '^ID=' /etc/os-release |sed -e 's/^.*=\(.*\)/\1/'|sed -e 's/"//g')
 
 case "$distro" in
     centos|rhel|fedora)
@@ -45,7 +45,7 @@ echo $distro $pm
 sudo $pm -y install screen git vim zsh tree
 
 # change default shell
-chsh -s `which zsh`
+chsh -s `chsh -l |grep zsh`
 
 
 # vim tw=0
