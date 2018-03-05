@@ -12,7 +12,7 @@
 [core]
 	editor = vim
 	pager = less -X
-	excludesfile = /home/richard/.gitignore
+	excludesfile = ${HOME}/.gitignore
 [diff]
 	tool = vimdiff
 [credential]
