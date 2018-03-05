@@ -1,0 +1,12 @@
+#!/bin/env sh
+
+# check cli param
+[ -z "$1" ] && echo "Please provide SHA as argument." && exit;
+
+# check param is sha
+git show $1 2>/dev/null
+[ $? -gt 0 ] && echo "No such repo SHA: $1" && exit;
+
+
+# run diff
+git diff $1 $1^
