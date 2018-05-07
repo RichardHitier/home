@@ -25,3 +25,5 @@
 	prompt = false
 [pull]
 	rebase = true
+[http]
+	sslVerify = false
