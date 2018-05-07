@@ -2,8 +2,8 @@
 "pif
 
 " pathogen runtime manager
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
+"runtime bundle/vim-pathogen/autoload/pathogen.vim
+"execute pathogen#infect()
 
 " js-beautifyer plugin
 map <c-j> :call JsBeautify()<cr>

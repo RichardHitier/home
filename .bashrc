@@ -12,10 +12,10 @@ fi
 #
 
 
-if [ -f ~/.rcdir/profile ]; then
-    . ~/.rcdir/profile
-if
-
 if [ -f ~/CalipsoProject/env.sh ]; then
     . ~/CalipsoProject/env.sh
+fi
+
+if [ -f ~/.rcdir/profile ]; then
+    . ~/.rcdir/profile
 fi
