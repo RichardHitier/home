@@ -47,4 +47,6 @@ alias sagi="sudo apt-get install"
 
 alias eclipse_unity="UBUNTU_MENUPROXY= /home/richard/Downloads/eclipse/eclipse"
 
+aliaz z="zsh"
+
 cdfile() { cd `dirname "$1"`}
