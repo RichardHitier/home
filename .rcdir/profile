@@ -19,6 +19,8 @@ export CVSROOT=/var/lib/cvs
 export PERL5LIB=./
 #export PAGER=most 
 
+alias a='bash -c '\''[[ -d venv ]] && . venv/bin/activate  && screen'\'''
+alias s=screen
 alias t2t=txt2tags
 alias t='tunnels'
 alias if='sudo ifdown eth1; sudo ifup eth1=wdyna'
@@ -48,3 +50,5 @@ alias sagi="sudo apt-get install"
 alias eclipse_unity="UBUNTU_MENUPROXY= /home/richard/Downloads/eclipse/eclipse"
 
 cdfile() { cd `dirname "$1"`}
+
+# vim: tw=0
