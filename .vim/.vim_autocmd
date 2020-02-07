@@ -20,6 +20,8 @@ autocmd BufNewFile  *.\(cpp\|cc\)  0r ~/skel/source.cpp
 
 autocmd BufNewFile,BufRead *.pl setf perl6
 
+autocmd BufRead,BufNewFile */textern/** set syntax=redminewiki
+
 " moved to ~/.vim/syntax/raw.vim
 "autocmd BufEnter *.raw set foldmethod=indent noexpandtab
 
