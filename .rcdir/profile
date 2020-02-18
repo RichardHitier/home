@@ -12,6 +12,8 @@ export GREP_COLOR='1;32'
 unset GREP_OPTIONS
 
 
+# set bc scale
+export BC_ENV_ARGS=${HOME}/.rcdir/bc
 
 #export PAGER=most 
 
