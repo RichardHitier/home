@@ -2,13 +2,17 @@
 	name = Richard Hitier
 	email = richard.hitier@co-libri.org
 [alias]
-	co = checkout
-	ci = commit
-	l = log --graph --pretty=\"format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset\"
 	s = status -suno
 	br = branch
 	pull = pull --ff
 	d = difftool
+	co = checkout
+	ci = commit
+    # log with date relative
+	l = log --graph --pretty=\"format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset\"
+    # log with date and time
+	lt = log --graph --pretty=\"format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ai%Creset\"
+    # other formats: '%ad' '%aD' '%at' '%aI' '%as'
 [core]
 	editor = vim
 	pager = less -X
