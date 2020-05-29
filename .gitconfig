@@ -1,6 +1,6 @@
 [user]
 	name = Richard Hitier
-	email = richard.hitier@co-libri.org
+	email = hitier.richard@gmail.com
 [alias]
 	s = status -suno
 	br = branch
@@ -17,10 +17,8 @@
 	editor = vim
 	pager = less -X
 	excludesfile = ${HOME}/.gitignore
-[diff]
-	tool = vimdiff
 [credential]
-	helper = cache
+    helper = cache --timeout 30000
 [color]
 	ui = true
 [push]
@@ -29,3 +27,12 @@
 	prompt = false
 [pull]
 	rebase = true
+[diff]
+    tool = pycharm
+[difftool "pycharm"]
+    cmd = /home/richard/Downloads/pycharm-2019.3.3/bin/pycharm.sh diff "$LOCAL" "$REMOTE" && echo "Press enter to continue..." && read
+[merge]
+    tool = pycharm
+    keepBackup = false
+[mergetool "pycharm"]
+    cmd = charm merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
