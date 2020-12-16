@@ -47,6 +47,6 @@ alias sagi="sudo apt-get install"
 
 alias eclipse_unity="UBUNTU_MENUPROXY= /home/richard/Downloads/eclipse/eclipse"
 
-#cdfile() { cd `dirname "$1"`}
+cdfile() { cd `dirname "$1"`}
 
 # vim: tw=0 ft=sh

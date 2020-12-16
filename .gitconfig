@@ -20,7 +20,7 @@
 [credential]
     helper = cache --timeout 30000
 [color]
-	ui = true
+	ui = always
 [push]
 	default = matching
 [difftool]
@@ -36,3 +36,5 @@
     keepBackup = false
 [mergetool "pycharm"]
     cmd = charm merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+[fetch]
+	prune = true
