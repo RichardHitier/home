@@ -45,7 +45,8 @@ echo $distro $pm
 sudo $pm -y install screen git vim zsh tree
 
 # change default shell
-chsh -s `chsh -l |grep zsh`
+#chsh -s `chsh -l |grep zsh`
+chsh -s `grep zsh /etc/shells | head -1`
 
 
 # vim tw=0
