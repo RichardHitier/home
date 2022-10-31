@@ -48,5 +48,9 @@ sudo $pm -y install screen git vim zsh tree
 #chsh -s `chsh -l |grep zsh`
 chsh -s `grep zsh /etc/shells | head -1`
 
+# install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+cp ~/config/misc/rhi.zsh-theme ~/.oh-my-zsh/themes/
 
 # vim tw=0
