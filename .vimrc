@@ -1,13 +1,6 @@
 "$Id: .vimrc,v 1.6 2004-11-30 11:03:00 hitier Exp $
 "pif
 
-" pathogen runtime manager
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
-
-" js-beautifyer plugin
-map <c-j> :call JsBeautify()<cr>
-
 set hls
 
 filetype plugin on
