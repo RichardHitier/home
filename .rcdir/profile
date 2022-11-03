@@ -27,7 +27,6 @@ alias fet=fetchmail
 alias rq='sudo runq'
 alias mq='sudo mailq'
 alias apt-get='echo "use aptitude instead"'
-alias findname='find ./ -name'
 alias ls='ls --color=auto -p'
 alias x='startx 2>/dev/null &'
 #alias vim='vim -c """normal "'""""'
@@ -35,15 +34,7 @@ alias m='fet; rq; mq; mutt'
 
 #alias qsdf='xmodmap ~/config/misc/myDvorak.xmod;xrdb ~/.Xresources'
 #alias qsdf='setxkbmap fr; xmodmap ~/config/misc/myDvorak.xmod'
-alias qsdf=$HOME'/bin/xmodmapgenerator'
 #alias qsdf='xmodmap ~/config/misc/myDvorak.xmod'
-alias aoeui='setxkbmap fr'
-alias aoeu=qsdf
-alias asdf=qsdf
-alias qsdfg='sudo loadkeys ~/config/misc/mydvorak-console'
-alias showip="sudo ifconfig eth0  | grep 'inet adr' | sed -e 's/^.*adr:\([^ ]*\).*$/\1/'"
-alias acs="apt-cache search"
-alias sagi="sudo apt-get install"
 
 alias eclipse_unity="UBUNTU_MENUPROXY= /home/richard/Downloads/eclipse/eclipse"
 
