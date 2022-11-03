@@ -42,7 +42,7 @@ esac
 echo $distro $pm
 
 # update packages
-sudo $pm -y install screen git vim zsh tree
+sudo $pm -y install screen git vim zsh tree curl gcc make
 
 # change default shell
 #chsh -s `chsh -l |grep zsh`
