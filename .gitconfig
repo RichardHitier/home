@@ -38,3 +38,5 @@
     cmd = charm merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
 [fetch]
 	prune = true
+[init]
+	defaultBranch = main
