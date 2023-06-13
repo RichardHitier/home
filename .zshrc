@@ -37,6 +37,7 @@ ZSH_THEME="rhi"
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
+#export LS_COLORS='di=104:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31' 
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
