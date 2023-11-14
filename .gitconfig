@@ -11,8 +11,9 @@
     # log with date relative
 	l = log --graph --pretty=\"format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset\"
     # log with date and time
-	lt = log --graph --pretty=\"format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ai%Creset\"
+    #lt = log --graph --pretty=\"format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ai%Creset\"
     # other formats: '%ad' '%aD' '%at' '%aI' '%as'
+    lt = log --graph --pretty=\"format:%C(yellow)%h%Cblue%d%Creset %>(50)%s %C(white) %an, %ai%Creset\" 
 [core]
 	editor = vim
 	pager = less -X

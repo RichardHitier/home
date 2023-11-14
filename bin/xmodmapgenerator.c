@@ -1,5 +1,6 @@
-// gcc xmodmapgenerator.c -lX11 -o xmodmapgenerator 
 // sudo apt-get install  libx11-dev
+// gcc xmodmapgenerator.c -lX11 -o xmodmapgenerator 
+// or make
 #include <stdlib.h>
 #include <stdio.h>
 #include <X11/XKBlib.h>
