@@ -1,0 +1,2 @@
+gsettings set org.gnome.desktop.wm.keybindings begin-move "[]"
+gsettings set org.gnome.desktop.wm.keybindings switch-group "['<Super>Above_Tab']"
