@@ -3,3 +3,4 @@ venv/
 *.o
 .idea
 __pycache__
+*.pyc

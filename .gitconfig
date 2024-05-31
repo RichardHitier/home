@@ -14,6 +14,7 @@
     #lt = log --graph --pretty=\"format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ai%Creset\"
     # other formats: '%ad' '%aD' '%at' '%aI' '%as'
     lt = log --graph --pretty=\"format:%C(yellow)%h%Cblue%d%Creset %>(50)%s %C(white) %an, %ai%Creset\" 
+    ltt = log --pretty=\"format:%C(yellow)%h%Creset %C(white) %an, %ai%Creset\" 
 [core]
 	editor = vim
 	pager = less -X
