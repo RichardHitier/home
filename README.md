@@ -39,4 +39,6 @@ import old settings
 install ideavim movetab
 
 
+## update keymap
 
+sudo cp config/usr/share/X11/xkb/symbols/us-24.04 /usr/share/X11/xkb/symbols/us
