@@ -8,5 +8,10 @@ Créée le jeudi 27 février 2025
 Paul Sab: https://www.univ-tlse2.fr/accueil/formation-insertion/formation-continue/validation-acquis-va-85 VA85
 
 next rdv APEC: ven 25 avril 2025
- TODO:
-	- 
+
+TODO:
+	- PTP -> conditions d'elligibilité
+	- dispositif démissionnaire: -> idem, conditions
+	- toutes formations possible ? 
+	- dossier RQTH
+	- dossier IDE
