@@ -38,6 +38,8 @@ alias m='fet; rq; mq; mutt'
 
 alias eclipse_unity="UBUNTU_MENUPROXY= /home/richard/Downloads/eclipse/eclipse"
 
+alias venv_activate="source ./venv/bin/activate"
+
 cdfile() { cd `dirname "$1"`}
 
 # vim: tw=0 ft=sh
