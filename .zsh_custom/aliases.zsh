@@ -9,3 +9,4 @@ alias showip="sudo ifconfig eth0  | grep 'inet adr' | sed -e 's/^.*adr:\([^ ]*\)
 alias acs="apt-cache search"
 alias sagi="sudo apt-get install"
 alias activate_venv="source venv/bin/activate; export PYTHONPATH=$PYTHONPATH:."
+alias bc='(echo "scale=3"; cat) | bc -q'
