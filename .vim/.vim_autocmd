@@ -22,6 +22,8 @@ autocmd BufNewFile,BufRead *.pl setf perl6
 
 autocmd BufRead,BufNewFile */textern/** set syntax=redminewiki
 
+autocmd BufRead,BufNewFile *.pro,*.pri set filetype=qmake
+
 " moved to ~/.vim/syntax/raw.vim
 "autocmd BufEnter *.raw set foldmethod=indent noexpandtab
 

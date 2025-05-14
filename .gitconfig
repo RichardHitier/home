@@ -23,6 +23,7 @@
 	editor = vim
 	pager = less -X
 	excludesfile = ~/.gitignore
+	autocrlf = input
 [credential]
     helper = cache --timeout 30000
 [color]
