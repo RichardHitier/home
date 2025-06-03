@@ -9,7 +9,7 @@ apt install git
     cd
     git init
     git remote add origin https://github.com/RichardHitier/home.git
-    git pull origin master
+    git pull origin main
     ./bin/homefini.sh
 
 update .zshrc from .zshrc-pre-ohmyzsh
