@@ -97,4 +97,8 @@ add-zsh-hook precmd steeef_precmd
 
 #PROMPT=$'[%{%F{red}%}%n%{$reset_color%}@%{%F{green}%}%m%{$reset_color%}] %{$limegreen%}%~%{$reset_color%} $vcs_info_msg_0_% $(virtualenv_info)$ '
 #PROMPT='[%F{red}%n%f@%F{blue}%m%f] %F{39}%~%f $vcs_info_msg_0_%'
-PROMPT='[%F{11}%n%f@%F{12}%m%f] %F{40}%~%f $vcs_info_msg_0_% $(virtualenv_info)$ '
+# Normal
+#PROMPT='[%F{11}%n%f@%F{12}%m%f] %F{40}%~%f $vcs_info_msg_0_% $(virtualenv_info)$ '
+# Truncating path
+PROMPT='[%F{11}%n%f@%F{12}%m%f] %F{40}%30<..<%~%<<%f $vcs_info_msg_0_% $(virtualenv_info)$ '
+
