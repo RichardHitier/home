@@ -77,6 +77,12 @@ plugins=(git vi-mode virtualenv)
 
 source $ZSH/oh-my-zsh.sh
 
+# Virtualenvwrapper
+if [ -f /etc/profile.d/virtualenvwrapper.sh ]; then
+    source /etc/profile.d/virtualenvwrapper.sh
+fi
+
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
