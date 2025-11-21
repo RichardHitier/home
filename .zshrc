@@ -72,7 +72,7 @@ export LS_COLORS='di=104:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31'
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode virtualenv)
+plugins=(git vi-mode virtualenv z)
 
 
 source $ZSH/oh-my-zsh.sh

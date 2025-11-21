@@ -100,5 +100,8 @@ add-zsh-hook precmd steeef_precmd
 # Normal
 #PROMPT='[%F{11}%n%f@%F{12}%m%f] %F{40}%~%f $vcs_info_msg_0_% $(virtualenv_info)$ '
 # Truncating path
-PROMPT='[%F{11}%n%f@%F{12}%m%f] %F{40}%30<..<%~%<<%f $vcs_info_msg_0_% $(virtualenv_info)$ '
+#PROMPT='[%F{11}%n%f@%F{12}%m%f] %F{40}%30<..<%~%<<%f $vcs_info_msg_0_% $(virtualenv_info)$ '
+# Last dir only
+PROMPT='[%F{11}%n%f@%F{12}%m%f] %F{40}%1~%f $vcs_info_msg_0_% $(virtualenv_info)$ '
+
 
