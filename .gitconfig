@@ -16,6 +16,7 @@
     lt = log --graph --pretty=\"format:%C(yellow)%h%Cblue%d%Creset %>(50)%s %C(white) %an, %ai%Creset\" 
     ltt = log --pretty=\"format:%C(yellow)%h%Creset %C(white) %an, %aD%Creset\" 
     lg = log  --all --date=format-local:'%a %Y-%m-%d %H:%M:%S' --pretty=format:'%C(cyan)%h%Creset %C(white bold)%ad%Creset%C(auto) %s'
+    lg2 = log  --all --date-order --date=format-local:'%Y-%m-%d' --pretty=format:'%ad %s'
     sl = stash list
     sp = stash pop
 
