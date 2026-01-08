@@ -1,0 +1,40 @@
+{
+    "files.eol": "\n",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 500,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "workbench.editor.enablePreview": false,
+    "editor.minimap.enabled": false,
+    "git.openRepositoryInParentFolders": "never",
+    "workbench.editor.empty.hint": "hidden",
+    "vim.digraphs": {
+        
+    },
+    "python.REPL.sendToNativeREPL": true,
+    "qt-core.qtInstallationRoot": "/home/richard/Qt5"
+
+    // === Formatter ===
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.black-formatter", // ou autopep8 si tu préfères
+
+    // === Linter ===
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": false,
+    "python.linting.ruffEnabled": true,       // Ruff pour style / vagues rouges
+
+    // === Pylance ===
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "basic",
+
+    // === GitHub Copilot (exemple IA) ===
+    "github.copilot.enable": true,             // completions / suggestions ON
+    "github.copilot.enableQuickFixes": false,  // Quick Fix / refactor OFF
+    "github.copilot.inlineSuggest.enable": true,
+
+    // === Code Actions locales ===
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true           // organise imports automatiquement
+    }
+}
+
