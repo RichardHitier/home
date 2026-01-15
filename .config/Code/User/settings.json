@@ -45,5 +45,6 @@
     //"python.analysis.autoDocstringFormat": "numpy",
     //"python.docstringFormat": "numpy",
     "autoDocstring.docstringFormat": "numpy",
-    "vim.useSystemClipboard": true
+    "vim.useSystemClipboard": true,
+    "git.openRepositoryInParentFolders": "never"
 }
