@@ -40,6 +40,8 @@ set fo=tcqr
 set bg=dark
 set nowrap
 
+set belloff=all
+
 set encoding=utf8
 
 source ~/.vim/.vim_autocmd
@@ -56,3 +58,4 @@ hi TabLine ctermfg=Black ctermbg=Grey guifg=#888888 guibg=#303030 gui=NONE cterm
 
 " Couleur de la partie après le dernier tab
 hi clear TabLineFill 
+

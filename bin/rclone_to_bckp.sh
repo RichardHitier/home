@@ -1,13 +1,9 @@
 #!/bin/bash
 
-# Script de synchronisation rclone
-# Ajout de logs avec horodatage
-
 LOG_FILE="$HOME/rclone-sync.log"
 
 echo -e "=== Début synchronisation $(date) ===\n" > "$LOG_FILE"
 
-# Vérification de la connexion réseau
 echo -e "\n== Vérification réseau ==" >> "$LOG_FILE"
 echo -e "== ------------------- ==\n" >> "$LOG_FILE"
 
@@ -20,6 +16,7 @@ fi
 
 DIRS=(
     "00PRO"
+    "01DEV"
     "03COMMON"
     "Bureau"
 )

@@ -109,3 +109,6 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+
+# Created by `pipx` on 2026-02-03 16:06:34
+export PATH="$PATH:/home/richard/.local/bin"

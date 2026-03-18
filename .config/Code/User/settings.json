@@ -1,50 +1,14 @@
 {
-    // === Formatter ===
-    "editor.formatOnSave": true,
-    //"editor.defaultFormatter": "ms-python.black-formatter", // or "ms-python.autopep8"
-    "editor.defaultFormatter": "ms-python.autopep8", // or "ms-python.autopep8"
-
-    // === Linter ===
-    //"python.linting.enabled": true,
-    //"python.linting.pylintEnabled": false,
-    //"python.linting.flake8Enabled": false,
-    //"python.linting.ruffEnabled": true,       // Ruff pour style / vagues rouges
-
-    // === Pylance ===
     "python.languageServer": "Pylance",
-    // "python.analysis.docstringFormat": "numpy",
-//
-    // === GitHub Copilot (IA) ===
-    "github.copilot.enable": true,             // completions / suggestions ON
-    //"github.copilot.enableQuickFixes": false,  // Quick Fix / refactor OFF
-    //"github.copilot.inlineSuggest.enable": true,
-//
-    // === CodeGPT / ChatGPT (IA) ===
-    //"codegpt.showCodeActions": false,          // empêche l'IA de s'inviter dans Ctrl+.
-    //"codegpt.enable": true,                    // completions ON
-    //"codegpt.inlineSuggestions": true,         // suggestions inline ON
-//
-    // === Code Actions locales ===
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit"
-    },
-
-    // === Fichiers et éditeur ===
-    "files.eol": "\n",
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 1000,
-    "workbench.editor.enablePreview": false,
-    "editor.minimap.enabled": false,
-    "python.analysis.aiCodeActions": {
-
-        "implementAbstractClasses": true,
-        "generateSymbol": true,
-        "convertFormatString": true
+    "editor.formatOnPaste": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+        // "editor.defaultFormatter": "ms-python.autopep8"
+        // "editor.defaultFormatter": "ms-python.black-formatter"
     },
-    "python.analysis.autoFormatStrings": true,
-    //"python.analysis.autoDocstringFormat": "numpy",
-    //"python.docstringFormat": "numpy",
-    "autoDocstring.docstringFormat": "numpy",
-    "vim.useSystemClipboard": true,
-    "git.openRepositoryInParentFolders": "never"
+    "editor.autoSurround": "languageDefined",
+    "extensions.ignoreRecommendations": true,
+    "git.openRepositoryInParentFolders": "never",
+    "python.defaultInterpreterPath": "/home/richard/.virtualenvs/speasy-3.13/bin/python",
 }
