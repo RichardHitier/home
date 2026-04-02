@@ -11,4 +11,8 @@
     "extensions.ignoreRecommendations": true,
     "git.openRepositoryInParentFolders": "never",
     "python.defaultInterpreterPath": "/home/richard/.virtualenvs/speasy-3.13/bin/python",
+    "flake8.args":[
+        "--ignore=E501,E221"
+    ],
+    "claudeCode.preferredLocation": "panel"
 }

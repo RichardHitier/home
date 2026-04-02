@@ -112,3 +112,4 @@ fi
 
 # Created by `pipx` on 2026-02-03 16:06:34
 export PATH="$PATH:/home/richard/.local/bin"
+export PATH=~/.npm-global/bin:$PATH
