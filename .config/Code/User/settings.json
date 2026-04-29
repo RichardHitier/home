@@ -1,18 +1,21 @@
+
 {
     "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "basic",
     "files.autoSave": "afterDelay",
     "editor.formatOnPaste": true,
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
-        // "editor.defaultFormatter": "ms-python.autopep8"
-        // "editor.defaultFormatter": "ms-python.black-formatter"
-    },
     "editor.autoSurround": "languageDefined",
     "extensions.ignoreRecommendations": true,
     "git.openRepositoryInParentFolders": "never",
     "python.defaultInterpreterPath": "/home/richard/.virtualenvs/speasy-3.13/bin/python",
-    "flake8.args":[
-        "--ignore=E501,E221"
-    ],
-    "claudeCode.preferredLocation": "panel"
+    "claudeCode.preferredLocation": "panel",
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "explicit"
+        }
+    },
+    "ruff.lint.enable": true
 }
