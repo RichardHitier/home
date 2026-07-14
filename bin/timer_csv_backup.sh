@@ -1,0 +1,1 @@
+/home/richard/01DEV/time_tracking/timer_csv_backup.sh
